@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "Fun plugin",
+  "description": "Очень весело \uD83D\uDE1D",
+  "version": "0.0.1",
+  "author": "Анальный Гений",
+  "browser_action": {
+    "default_title": "Fun plugin",
+    "default_icon": "icon.png",
+    "default_popup": "index.html"
+  },
+  "icons": {
+    "48": "icon.png",
+    "96": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": ["content.js"]
+    }
+  ],
+  "permissions": ["activeTab"]
+}
